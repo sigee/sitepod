@@ -23,7 +23,7 @@ jdk:
 before_script:
   - composer install
   - chmod -v -R 755 .
-  - chmod -v -R 755 //run/docker
+  - sudo chmod -v -R 755 //run/docker
 
 script:
   - ./vendor/bin/phpunit
